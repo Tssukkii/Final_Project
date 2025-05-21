@@ -1,13 +1,13 @@
 import streamlit as st
 import numpy as np
-import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 from PIL import Image
 
 st.title("🌤️ Weather Image Classifier")
 st.write("Upload an image to predict the weather condition.")
 
 # Load TFLite model
-interpreter = tf.lite.Interpreter(model_path="weather_model.tflite")
+interpreter = tflite.Interpreter(model_path="weather_model.tflite")
 interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()
 output_details = interpreter.get_output_details()
