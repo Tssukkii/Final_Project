@@ -7,7 +7,7 @@ import os
 from PIL import Image
 
 # === Load model ===
-model = load_model('model/weather_model.h5')
+model = load_model('model/weather_model_cpu.h5')
 class_names = ['cloudy', 'rain', 'shine', 'sunrise']  # update based on your dataset
 
 # === Streamlit App ===
