@@ -1,4 +1,5 @@
 streamlit
-tflite-runtime
+tensorflow
 numpy
-Pillow
+pillow
+matplotlib
