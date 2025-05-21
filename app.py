@@ -7,7 +7,7 @@ import json
 # Set page config
 st.set_page_config(page_title="Weather Classifier", layout="centered")
 st.title("🌤️ Weather Image Classifier")
-st.write("Upload a weather image to classify it using a Keras-based MobileNetV2 model.")
+st.write("Upload a weather image to classify it")
 
 # === Load model and labels ===
 @st.cache_resource
